@@ -1,0 +1,16 @@
+{
+  "newFileLocation": "folder",
+  "newFileFolderPath": "memory/reflection/journal",
+  "attachmentFolderPath": "attachments",
+  "dailyNotes": {
+    "enabled": true,
+    "folder": "memory/reflection/journal",
+    "template": "templates/daily-note.md",
+    "format": "YYYY-MM-DD"
+  },
+  "templates": {
+    "enabled": true,
+    "folder": "templates"
+  },
+  "promptDelete": false
+}
