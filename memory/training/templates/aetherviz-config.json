@@ -1,0 +1,80 @@
+{
+  "name": "AetherViz Master 课件模板",
+  "version": "1.0",
+  "description": "基于主题自动生成3D交互教学网页",
+  "author": "training-design-agent",
+  
+  "subject_themes": {
+    "physics": {
+      "name": "物理",
+      "gradient": "linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)",
+      "accent": "#00d4ff",
+      "render_mode": "threejs"
+    },
+    "chemistry": {
+      "name": "化学",
+      "gradient": "linear-gradient(135deg, #2d1b4e 0%, #6b2c91 100%)",
+      "accent": "#e040fb",
+      "render_mode": "threejs"
+    },
+    "biology": {
+      "name": "生物",
+      "gradient": "linear-gradient(135deg, #1b5e20 0%, #4caf50 100%)",
+      "accent": "#69f0ae",
+      "render_mode": "mixed"
+    },
+    "math": {
+      "name": "数学",
+      "gradient": "linear-gradient(135deg, #f57f17 0%, #ffca28 100%)",
+      "accent": "#ffd54f",
+      "render_mode": "svg"
+    },
+    "astronomy": {
+      "name": "天文",
+      "gradient": "linear-gradient(135deg, #0d1b2a 0%, #1b263b 100%)",
+      "accent": "#4fc3f7",
+      "render_mode": "threejs"
+    },
+    "programming": {
+      "name": "编程",
+      "gradient": "linear-gradient(135deg, #e65100 0%, #ff9800 100%)",
+      "accent": "#ffab40",
+      "render_mode": "svg"
+    }
+  },
+
+  "keywords_mapping": {
+    "threejs_pure": ["运动", "粒子", "分子", "机械", "天体", "力", "场"],
+    "svg_pure": ["函数", "图像", "曲线", "几何", "图表", "算法"],
+    "mixed": ["牛顿", "波动", "能量", "电磁", "DNA", "细胞"]
+  },
+
+  "lesson_structure": {
+    "components": [
+      "learning_objectives",
+      "principle_explanation",
+      "math_formulas",
+      "interactive_demo",
+      "quiz_panel"
+    ],
+    "controls": [
+      "play_pause",
+      "step_by_step",
+      "speed_slider",
+      "parameter_sliders"
+    ],
+    "features": [
+      "touch_support",
+      "responsive_layout",
+      "math_rendering",
+      "progress_tracking"
+    ]
+  },
+
+  "output_template": {
+    "filename_pattern": "{subject}_{topic}_{date}.html",
+    "directory": "memory/training/lessons/generated/",
+    "standalone": true,
+    "browser_compatible": ["Chrome", "Edge", "Firefox", "Safari"]
+  }
+}
