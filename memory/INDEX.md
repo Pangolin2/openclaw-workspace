@@ -20,9 +20,16 @@
 | [投资原则](/memory/investing/01-投资原则.md) | 核心纪律与原则 |
 | [宏观分析](/memory/investing/macro/宏观分析框架.md) | 自上而下分析 |
 | [行业分析](/memory/investing/industry/行业分析模板.md) | 行业研究框架 |
+| [小金属板块分析](/memory/investing/industry/小金属板块分析.md) | 锂钴镍稀土等分析 ⭐ |
 | [个股分析](/memory/investing/stock/个股分析清单.md) | 深度研究工具 |
 | [观察清单](/memory/investing/portfolio/观察清单.md) | 股票池管理 |
 | [投资日志](/memory/investing/logs/日志模板.md) | 交易记录与复盘 |
+
+### 示例分析
+| 文件 | 说明 |
+|------|------|
+| [紫金矿业](/memory/investing/stock/examples/紫金矿业-601899-分析.md) | 全球化矿业龙头 ⭐ |
+| [华胜天成](/memory/investing/stock/examples/华胜天成-600410-分析.md) | AI概念股分析 |
 
 ---
 
