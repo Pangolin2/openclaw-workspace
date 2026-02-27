@@ -12,6 +12,20 @@
 
 ---
 
+## 📈 投资研究 (memory/investing/)
+
+| 文件 | 说明 |
+|------|------|
+| [README](/memory/investing/00-README.md) | 投资分析框架总览 |
+| [投资原则](/memory/investing/01-投资原则.md) | 核心纪律与原则 |
+| [宏观分析](/memory/investing/macro/宏观分析框架.md) | 自上而下分析 |
+| [行业分析](/memory/investing/industry/行业分析模板.md) | 行业研究框架 |
+| [个股分析](/memory/investing/stock/个股分析清单.md) | 深度研究工具 |
+| [观察清单](/memory/investing/portfolio/观察清单.md) | 股票池管理 |
+| [投资日志](/memory/investing/logs/日志模板.md) | 交易记录与复盘 |
+
+---
+
 ## 领域目录
 
 ### 🏠 家庭 (memory/home/)
