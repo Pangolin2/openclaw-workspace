@@ -7,7 +7,11 @@
 | 文件 | 用途 |
 |------|------|
 | [NOW.md](/NOW.md) | 当前状态仪表盘 |
-| [SOUL.md](/SOUL.md) | 核心人格定义 |
+| [SOUL.md](/SOUL.md) | 核心人格定义（Main Agent）|
+| [AGENTS.md](/AGENTS.md) | 协作协议与规则 |
+| [HEARTBEAT.md](/HEARTBEAT.md) | 监控清单与决策逻辑 |
+| [TOOLS.md](/TOOLS.md) | 工具使用说明 |
+| [Task-Board.md](/Task-Board.md) | 任务看板 |
 | [SYSTEM.md](/memory/SYSTEM.md) | 多领域调度系统 |
 
 ---

@@ -512,6 +512,41 @@ Main: @user Project fully completed!
 
 ---
 
+### Skills分配策略
+
+虽然当前环境无法配置真正的skills白名单，但按角色规划工具使用：
+
+| Agent | 推荐工具 | 使用场景 |
+|-------|---------|---------|
+| **Main** | `memory_search`, `read/write/edit`, `git` | 看板管理、任务协调、文档更新 |
+| **Code** | `exec`, `read/write/edit`, `git` | 脚本编写、代码开发、自动化 |
+| **Researcher** | `web_search`, `web_fetch`, `browser` | 信息搜集、深度调研、行业分析 |
+| **Knowledge** | `read/write/edit`, `memory_search`, `git` | 文档整理、知识归档、内容创作 |
+
+**使用原则**:
+- 按角色选择合适工具，避免越界
+- 减少选择困难，明确责任边界
+- 复杂任务由Main协调使用多个工具
+
+---
+
+### 监控机制 (Heartbeat)
+
+**机制设计**:
+- 定时触发: 每30分钟检查一次（见 `HEARTBEAT.md`）
+- 优先级检查: No tags → Review → Blocked → In Progress >48h → TODO >24h
+- 智能决策: Main Agent根据任务状态决定如何处理
+- 静默模式: 无事项时返回 `HEARTBEAT_OK`
+
+**检查清单** (详见 `HEARTBEAT.md`):
+1. 未标记任务 → 读取+分配+添加标签
+2. Review任务 → 验证并关闭
+3. Blocked任务 → 协助解决
+4. In Progress >48h → 检查进展
+5. TODO >24h → 催促或重新分配
+
+---
+
 *Multi-Agent Protocol Version: 2.0*  
 *Reference: 香蕉Banana Multi-Agent Architecture*  
 *Updated: 2026-02-26*
