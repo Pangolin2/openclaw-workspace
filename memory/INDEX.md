@@ -12,6 +12,14 @@
 
 ---
 
+## ⚙️ 系统架构 (memory/system/)
+
+| 文件 | 说明 |
+|------|------|
+| [多Agent架构](/memory/system/多Agent架构设计.md) | 团队设计与协作协议 ⭐ |
+
+---
+
 ## 📈 投资研究 (memory/investing/)
 
 | 文件 | 说明 |
