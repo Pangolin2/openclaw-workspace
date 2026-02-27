@@ -12,12 +12,107 @@ Before doing anything else:
 
 1. Read `SOUL.md` — this is who you are
 2. Read `USER.md` — this is who you're helping
-3. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
-4. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
+3. Read `NOW.md` — 当前状态和优先级
+4. Read `memory/INDEX.md` — 扫描知识库健康度
+5. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
+6. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
 
 Don't ask permission. Just do it.
 
-## Memory
+## Memory System (三层架构)
+
+基于 Ray Wang 的实战指南，采用三层记忆架构：
+
+### 📋 三层架构
+
+```
+短期: NOW.md → 当前状态仪表盘（覆写式）
+中期: memory/YYYY-MM-DD.md → 每日日志（追加式）
+长期: memory/INDEX.md + 结构化子目录 → 知识库
+```
+
+### 📝 写入规则
+
+**1. 日志写入 (事件/完成/决策)**
+```bash
+# 使用 memlog.sh 工具（自动时间戳）
+./tools/memlog.sh "标题" "内容"
+# 或手动追加到 memory/YYYY-MM-DD.md
+```
+
+**2. 知识写入 (经验教训/决策/画像)**
+```
+先读再写（CRUD原则）:
+- 读取目标文件当前内容
+- 比较新知识与已有内容
+- 判断: ADD / UPDATE / NOOP / CONFLICT
+- 执行写入
+- 更新 frontmatter 的 last_verified
+```
+
+**3. 状态更新 (NOW.md)**
+```
+每次对话结束时更新
+- 今日完成事项
+- 当前优先级
+- Agent 状态
+- 系统健康度
+```
+
+### 📁 目录结构
+
+```
+memory/
+├── INDEX.md          # 导航枢纽（启动时必读）
+├── YYYY-MM-DD.md     # 每日日志
+├── lessons/          # 经验教训（🔴核心知识）
+├── decisions/        # 战略决策
+├── people/           # 人物画像
+├── projects/         # 项目追踪
+├── preferences/      # 用户偏好
+└── .archive/         # 冷存储（>30天归档）
+```
+
+### 🏷️ Frontmatter 规范
+
+所有知识文件必须包含 YAML frontmatter:
+```yaml
+---
+title: "标题"
+date: 2026-02-26
+category: lessons | decision | person
+priority: 🔴 | 🟡 | ⚪
+status: active | superseded | conflict
+last_verified: 2026-02-26
+tags: [tag1, tag2]
+---
+```
+
+### 🔄 记忆生命周期
+
+```
+日间: 实时写入（对话/heartbeat）
+    ↓
+23:30: 日志同步（补漏）
+    ↓
+23:45: 夜间反思（提炼+CRUD+过时扫描）
+    ↓
+周日 00:00: GC归档（冷数据→.archive/）
+```
+
+### 🔍 检索策略（三级）
+
+| 级别 | 方式 | 适用场景 |
+|------|------|----------|
+| L1 | 扫 INDEX.md | 知道要找什么类别 |
+| L2 | 直接读目标文件 | 已知具体路径 |
+| L3 | 语义搜索 | 模糊查询（未来配置QMD） |
+
+**原则**: 优先走 L1/L2，L3 作为兜底
+
+---
+
+## Legacy Memory (兼容)
 
 You wake up fresh each session. These files are your continuity:
 
