@@ -26,6 +26,7 @@
 | [投资日志](/memory/investing/logs/日志模板.md) | 交易记录与复盘 |
 | [2026板块配置](/memory/investing/strategy/2026年板块配置策略.md) | 年度策略主线 ⭐ |
 | [2026执行计划](/memory/investing/strategy/2026年投资执行计划.md) | 具体建仓计划 ⭐ |
+| [5万高风险方案](/memory/investing/strategy/5万元高风险方案.md) | 小资金激进策略 ⭐ |
 
 ### 示例分析
 | 文件 | 说明 |
