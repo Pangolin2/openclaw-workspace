@@ -1,0 +1,18 @@
+{
+  "newLinkFormat": "shortest",
+  "useMarkdownLinks": false,
+  "attachmentFolderPath": "attachments",
+  "dailyNotes": {
+    "enabled": true,
+    "folder": "01-inbox",
+    "template": "templates/daily-note.md",
+    "format": "YYYY-MM-DD"
+  },
+  "templates": {
+    "enabled": true,
+    "folder": "templates"
+  },
+  "promptDelete": false,
+  "showUnsupportedFiles": true,
+  "alwaysUpdateLinks": true
+}
