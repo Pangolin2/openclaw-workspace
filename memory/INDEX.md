@@ -25,6 +25,7 @@
 | [观察清单](/memory/investing/portfolio/观察清单.md) | 股票池管理 |
 | [投资日志](/memory/investing/logs/日志模板.md) | 交易记录与复盘 |
 | [2026板块配置](/memory/investing/strategy/2026年板块配置策略.md) | 年度策略主线 ⭐ |
+| [2026执行计划](/memory/investing/strategy/2026年投资执行计划.md) | 具体建仓计划 ⭐ |
 
 ### 示例分析
 | 文件 | 说明 |
