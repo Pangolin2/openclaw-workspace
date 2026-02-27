@@ -24,6 +24,7 @@
 | [个股分析](/memory/investing/stock/个股分析清单.md) | 深度研究工具 |
 | [观察清单](/memory/investing/portfolio/观察清单.md) | 股票池管理 |
 | [投资日志](/memory/investing/logs/日志模板.md) | 交易记录与复盘 |
+| [2026板块配置](/memory/investing/strategy/2026年板块配置策略.md) | 年度策略主线 ⭐ |
 
 ### 示例分析
 | 文件 | 说明 |
